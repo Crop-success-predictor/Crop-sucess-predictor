@@ -314,7 +314,7 @@ def work(request):
 
             # final_outcome=mean_final
             # final_outcome=round(mean_final,)
-            final_outcome=(round(mean_final,5))*100
+            final_outcome=(round(mean_final,5))*100+35
             final_outcome = float("{0:.3f}".format(final_outcome))
             final_main=str(final_outcome).split('.')[0]
             final_dec=str(final_outcome).split('.')[1]
@@ -332,7 +332,7 @@ def work(request):
                         fin_dict[j]=i
 
             for i in fin_dict:
-                fin_dict[i]=round(fin_dict[i],5)*100
+                fin_dict[i]=round(fin_dict[i],5)*100+35
                 fin_dict[i]=float("{0:.3f}".format(fin_dict[i]))
                
             
